@@ -1,0 +1,23 @@
+h1{
+    color:cadetblue;
+    font-style: italic;
+    padding-left: 37%;
+}
+h2 {
+    color : darkslategray;
+    text-align: center;
+}
+i{
+    margin-left: 20%;
+}
+.container{
+    padding-left: 45;
+    margin-left: 42%;
+}
+h3{
+    text-align: center;
+}
+.con{
+    text-align: center;
+    padding-top: 10%;
+}

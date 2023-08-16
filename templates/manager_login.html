@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-width, intial-scale=1.0">
+        <title>Manager Login</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+    </head>
+    <body>
+        <div>
+            <header><h2>Login Here</h2></header>
+        </div>
+        <div class="container" >
+            <form method="POST" action="/manager_login">
+                <label for="managername">Manager name : </label><br>
+                <input type="text" placeholder="Enter Manager Name" id="managername" name="managername" required><br>
+                <br>
+                <label for="password">Passwrod : </label><br>
+                <input type="password" placeholder="Enter Your Password" id="password" name="password" required><br>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

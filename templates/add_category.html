@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Manager Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="../static/styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <div>
+                    <a class="navbar-brand" href="">manager_dashboard</a>                          
+                </div>
+                <div>
+                    <a class="navbar-brand" href="{{url_for('manager_dashboard')}}">Profile</a>
+                    <a class="navbar-brand" href="{{url_for('index')}}">logout</a>
+                </div>
+           </nav>
+        </header>
+        <div>
+            <p class="con">Add new category here</p>
+            <form class="container" method="POST" action="/add_category">
+                <label for="category_name">Category name : </label>
+                <input type="text" id="category_name" placeholder="Enter a category" name="category_name" required>
+                <input type="submit" value="Add" >
+            </form>
+        </div>
+    </body>
+</html>
